@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Титани ООД | Контакти</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <script>
+    window.onload = function () {
+      initMap();
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+</head>
+<body>
+<header>
+    <div id="branding">
+      <h1><span class="highlight">Titani</span> LTD</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Начало</a></li>
+        <li><a href="./aboutus.html">За нас</a></li>
+        <li><a href="./products.html">Продукти</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+</header>
+
+<section class="contacts">
+  <div class="contactsContainer">
+    <div class="contactInfo">
+      <p>
+        <span>Титани ООД</span> - Аксаково<br>
+        Южна промишлена зона<br>
+        гр. Аксаково
+      </p>
+    </div>
+    <div class="mapContainer">
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11625.473799953614!2d27.80992745!3d43.24369925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6e0b5193fa40286!2z0KLQuNGC0LDQvdC4INCe0J7QlA!5e0!3m2!1sbg!2sbg!4v1671291594310!5m2!1sbg!2sbg"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="contactInfo">
+      <p>
+        Тел: +359879190035<br><br>
+        Стационарен: <br>
+        +359 52 763197<br>
+        +359 52 763007<br><br>
+        Email: daniel_titani@abv.bg
+      </p>
+    </div>
+  </div>
+  <div class="contactForm">
+    <form id="cform" action="/submit-form" method="post">
+      <h2>Формуляр за запитване</h2>
+      <label for="first-name">Име:</label><br>
+      <input type="text" id="first-name" name="first-name" placeholder="Иван"><br>
+      <label for="last-name">Фамилия:</label><br>
+      <input type="text" id="last-name" name="last-name" placeholder="Иванов"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="ivanivanov@abv.bg"><br>
+      <label for="phone">Телефонен Номер:</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="0888888888"><br>
+      <label for="message">Съобщение:</label><br>
+      <textarea id="message" name="message"></textarea><br><br>
+      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  <p>Copyright &copy; 2023 Титани ООД - Аксаково | Южна промишлена зона, гр. Аксаково</p>
+  <div>
+    <p>Стационарен: +35952763197, +35952763007</p>
+    <p>Email: daniel_titani@abv.bg</p>
+  </div>
+</footer>
+</body>
