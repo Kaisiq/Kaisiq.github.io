@@ -8,14 +8,13 @@ body {
 }
 
 header {
-    background-color: #4caf50;
+    background-color: rgba(76,175,80,1);
     color: #ffffff;
     padding: 20px 0;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-around;
-
 }
 
 
@@ -57,6 +56,19 @@ nav {
     justify-content: center;
 }
 
+#showcase {
+    /*background-color: #aed581;*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)), url(media/TitaniOOD_kran.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
 nav a {
     display: block;
     padding: 20px;
@@ -72,13 +84,6 @@ nav a {
 
 nav a:hover {
     background-color: #388e3c;
-}
-
-#showcase {
-    background-color: #aed581;
-    color: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
 }
 
 #showcase h1 {
@@ -289,12 +294,12 @@ iframe#map {
 #cform {
     padding: 20px;
     border-radius: 20px;
-    background: #4caf50;
+    background: #aed581;
     margin-top: 20px;
 }
 
 form {
-    width: 70%;
+    width: 35%;
     min-width: 500px;
     margin: 0 auto;
     text-align: center;
@@ -302,6 +307,7 @@ form {
 
 form h2{
     color: #e8f5e9;
+    text-shadow: 0 0 10px rgba(0,0,0,.48);
     font-weight: bold;
     font-size: 42px;
 }
@@ -327,7 +333,7 @@ input[type="text"], input[type="email"], input[type="tel"] {
 }
 
 input::placeholder{
-    color: #cccccc;
+    color: #ADADC9;
 }
 
 /* Style the textarea field */
@@ -383,6 +389,9 @@ input[type="text"].captcha {
     border-radius: 4px;
 }
 
+.contactInfo{
+    width:25%;
+}
 
 .contactInfo p{
     text-align: center;
@@ -393,7 +402,7 @@ input[type="text"].captcha {
 .contactInfo p span{
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 0px 0px 10px rgba(0,0,0,.48);
+    text-shadow: 0 0 10px rgba(0,0,0,.48);
 }
 
 
@@ -526,11 +535,10 @@ input[type="text"].captcha {
 
 .productsbtn{
     width:50%;
-    margin: auto;
-    display: block;
+    margin: 0 auto 20px auto;
+    display: flex;
     justify-content: center;
     text-align: center;
-    /*margin-bottom: 20px;*/
 }
 .productsbtn a{
     font-size:36px;
@@ -539,21 +547,48 @@ input[type="text"].captcha {
 }
 
 .productsbtn p{
-    font-size: 20px;
+    font-size: 18px;
+
 }
 
 .green-button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 30px 64px;
+    padding: 20px 48px;
+    height:80%;
+    margin: auto;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 32px;
     transition-duration: 0.4s;
 }
+
+.green-button-index {
+    background-color: rgba(76,175,80,0.7);
+    color: white;
+    border: none;
+    padding: 20px 48px;
+    height:80%;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 32px;
+    transition-duration: 0.4s;
+}
+
+.green-button-index:hover {
+    background-color: rgba(0,150,0,0.7);
+}
+
+#margin-right{
+    margin-right: 20px;
+}
+
 .green-button:hover {
     background-color: #006400;
 }
@@ -588,6 +623,8 @@ input[type="text"].captcha {
 .product {
     position: relative;
     overflow: hidden;
+    border-radius: 25px;
+    height:300px;
 }
 .product img {
     width: 100%;
