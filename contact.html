@@ -19,68 +19,71 @@
 <body>
 <header>
     <div id="branding">
-      <h1><span class="highlight">Titani</span> LTD</h1>
+      <h1 class="text-light"><span class="highlight">Titani</span> LTD</h1>
     </div>
     <nav>
       <ul>
-        <li><a href="./index.html">Начало</a></li>
-        <li><a href="./aboutus.html">За нас</a></li>
-        <li><a href="./products.html">Продукти</a></li>
-        <li><a href="#">Контакти</a></li>
+        <li><a class="text-light" href="./index.html">Начало</a></li>
+        <li><a class="text-light" href="./aboutus.html">За нас</a></li>
+        <li><a class="text-light" href="./products.html">Продукти</a></li>
+        <li><a class="text-light" href="#">Контакти</a></li>
       </ul>
     </nav>
 </header>
 
 <section class="contacts">
   <div class="contactsContainer">
-    <div class="contactInfo">
-      <p>
-        <span>Титани ООД</span> - Аксаково<br>
-        Южна промишлена зона<br>
-        гр. Аксаково
-      </p>
+    <div class="flex">
+      <div class="contactInfo">
+        <p class="text-light">
+          <span>Титани ООД</span> - Аксаково<br>
+          Южна промишлена зона<br>
+          гр. Аксаково
+        </p>
+      </div>
+      <div class="contactInfo">
+        <p class="text-light">
+          Тел: +359879190035<br><br>
+          Стационарен: <br>
+          +359 52 763197<br>
+          +359 52 763007<br><br>
+          Email: daniel_titani@abv.bg
+        </p>
+      </div>
     </div>
     <div class="mapContainer">
       <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11625.473799953614!2d27.80992745!3d43.24369925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6e0b5193fa40286!2z0KLQuNGC0LDQvdC4INCe0J7QlA!5e0!3m2!1sbg!2sbg!4v1671291594310!5m2!1sbg!2sbg"
               style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </div>
-    <div class="contactInfo">
-      <p>
-        Тел: +359879190035<br><br>
-        Стационарен: <br>
-        +359 52 763197<br>
-        +359 52 763007<br><br>
-        Email: daniel_titani@abv.bg
-      </p>
-    </div>
+
   </div>
   <div class="contactForm">
     <form id="cform" action="/submit-form" method="post">
-      <h2>Формуляр за запитване</h2>
-      <label for="first-name">Име:</label><br>
+      <h2 class="text-light">Формуляр за запитване</h2>
+      <label for="first-name" class="text-light">Име:</label><br>
       <input type="text" id="first-name" name="first-name" placeholder="Даниел"><br>
-      <label for="last-name">Фамилия:</label><br>
+      <label class="text-light" for="last-name" >Фамилия:</label><br>
       <input type="text" id="last-name" name="last-name" placeholder="Иванов"><br>
-      <label for="email">Email:</label><br>
+      <label class="text-light" for="email">Email:</label><br>
       <input type="email" id="email" name="email" placeholder="daniel_titani@abv.bg"><br>
-      <label for="phone">Телефонен Номер:</label><br>
+      <label class="text-light" for="phone">Телефонен Номер:</label><br>
       <input type="tel" id="phone" name="phone" placeholder="+35952763197"><br>
-      <label for="message">Съобщение:</label><br>
+      <label class="text-light" for="message">Съобщение:</label><br>
       <textarea id="message" name="message"></textarea><br><br>
       <div class="g-recaptcha" data-sitekey="your_site_key"></div>
       <br>
-      <input type="submit" value="Submit">
+      <input class="text-light" type="submit" value="Изпращане">
     </form>
 
   </div>
 </section>
 
 <footer>
-  <p>Copyright &copy; 2023 Титани ООД - Аксаково | Южна промишлена зона, гр. Аксаково</p>
+  <p class="text-light">Copyright &copy; 2023 Титани ООД - Аксаково | Южна промишлена зона, гр. Аксаково</p>
   <div>
-    <p>Стационарен: +35952763197, +35952763007</p>
-    <p>Email: daniel_titani@abv.bg</p>
+    <p class="text-light">Стационарен: +35952763197, +35952763007</p>
+    <p class="text-light">Email: daniel_titani@abv.bg</p>
   </div>
 </footer>
 </body>
