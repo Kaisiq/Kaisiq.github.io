@@ -388,7 +388,7 @@ input[type="text"].captcha {
 
 
 .reviewSection{
-    width:80%;
+    width:70%;
     margin:auto;
 }
 
@@ -398,15 +398,9 @@ input[type="text"].captcha {
     font-size: 30px;
 }
 
-.reviews{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 18px;
-}
 
 .column {
-    padding: 0 5%;
+    padding: 0;
     text-align: center;
 }
 

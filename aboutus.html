@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="script.js"></script>
 </head>
 <body>
@@ -74,32 +75,46 @@
   </div>
 </section>
 <section class="reviewSection">
-  <h2 class="text-dark">Отзиви от наши клиенти:</h2>
-  <div class="reviews">
-    <div class="column">
-      <p class="text-dark">"Предлагат широка гама черни метали и газопламъчен
-        компютърен разкрой.
-        Коректни, бързи и прецизни с обслужването. Ако ви потрябват
-        черни метали, това е мястото!"</p>
-      <img src="./media/woman1.jpg" alt="reviewer 1">
-      <h4 class="text-dark">ДеситаБГ</h4>
-    </div>
-    <div class="column">
-      <p class="text-dark">"Имат богат избор от конструкционни, качествени и
-        легирани марки стомани,
-        различни марки чугун. Разполагат с ЦПУ разкройваща машина
-        за листова стомана.
-        Изключително точни по отношение на клиента!"</p>
-      <img src="media/man2.jpg" alt="reviewer 2">
-      <h4 class="text-dark">Никола Гюров</h4>
-    </div>
-    <div class="column">
-      <p class="text-dark">"Още от влизане в офиса ми повдигнаха настроението.
+  <h2 class="text-dark">Няколко думи от наши клиенти:</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide column">
+        <p class="text-dark">"Предлагат широка гама черни метали и газопламъчен
+          компютърен разкрой.
+          Коректни, бързи и прецизни с обслужването. Ако ви потрябват
+          черни метали, това е мястото!"</p>
+        <img src="./media/woman1.jpg" alt="reviewer 1">
+        <h4 class="text-dark">Калина Стоянова</h4>
+        <p class="text-dark">25.11.2019</p>
+      </div>
+      <div class="swiper-slide column">
+        <p class="text-dark">"Имат богат избор от конструкционни, качествени и
+          легирани марки стомани,
+          различни марки чугун. Разполагат с ЦПУ разкройваща машина
+          за листова стомана.
+          Изключително точни по отношение на клиента!"</p>
+        <img src="media/man2.jpg" alt="reviewer 2">
+        <h4 class="text-dark">Никола Гюров</h4>
+        <p class="text-dark">26.04.2020</p>
+      </div>
+      <div class="swiper-slide column">
+        <p class="text-dark">"Още от влизане в офиса ми повдигнаха настроението.
         Много бързо изпълнение на поръчката, а и цената беше
         най-добрата в района."</p>
-      <img src="media/man1.jpg" alt="reviewer 3">
-      <h4 class="text-dark">Самуил Миланов</h4>
+        <img src="media/man1.jpg" alt="reviewer 3">
+        <h4 class="text-dark">Самуил Миланов</h4>
+        <p class="text-dark">17.09.2019</p>
+      </div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
 
@@ -110,4 +125,39 @@
     <p class="text-light">Email: daniel_titani@abv.bg</p>
   </div>
 </footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper', {
+    rewind: true,
+    slidesPerView: 3,
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    direction: getDirection(),
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      },
+    },
+  });
+
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }
+</script>
 </body>
