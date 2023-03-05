@@ -4,11 +4,20 @@
   <title>Титани ООД | Контакти</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="WQ7tBgzU_zfTtjgOKxtgJw0-FfIrWpS-SDze12LyU4A">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap" rel="stylesheet">
   <script src="script.js"></script>
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfK3NAkAAAAAFeJPAS7svivxImLjedJPtu4TLE3"></script>
+  <script>
+    grecaptcha.enterprise.ready(function() {
+      grecaptcha.enterprise.execute('6LfK3NAkAAAAAFeJPAS7svivxImLjedJPtu4TLE3', {action: 'login'}).then(function(token) {
+      ...
+      });
+    });
+  </script>
   <script>
     window.onload = function () {
       initMap();
@@ -62,17 +71,30 @@
     <form id="cform" action="/submit-form" method="post">
       <h2 class="text-light">Формуляр за запитване</h2>
       <label for="first-name" class="text-light">Име:</label><br>
-      <input type="text" id="first-name" name="first-name" placeholder="Даниел"><br>
+      <input type="text" id="first-name" name="first-name" required placeholder="Даниел"><br>
       <label class="text-light" for="last-name" >Фамилия:</label><br>
-      <input type="text" id="last-name" name="last-name" placeholder="Иванов"><br>
+      <input type="text" id="last-name" name="last-name" required placeholder="Иванов"><br>
       <label class="text-light" for="email">Email:</label><br>
-      <input type="email" id="email" name="email" placeholder="daniel_titani@abv.bg"><br>
+      <input type="email" id="email" name="email" required placeholder="daniel_titani@abv.bg"><br>
       <label class="text-light" for="phone">Телефонен Номер:</label><br>
-      <input type="tel" id="phone" name="phone" placeholder="+35952763197"><br>
+      <input type="tel" id="phone" name="phone" required placeholder="+35952763197"><br>
       <label class="text-light" for="message">Съобщение:</label><br>
       <textarea id="message" name="message"></textarea><br><br>
-      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-      <br>
+      <div class="g-recaptcha" data-sitekey="6LfK3NAkAAAAAFeJPAS7svivxImLjedJPtu4TLE3" data-recaptcha-id="0">
+        <div style="width: 304px; height: 78px;">
+          <div>
+            <iframe title="reCAPTCHA"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=2&k=6LfK3NAkAAAAAFeJPAS7svivxImLjedJPtu4TLE3&co=aHR0cHM6Ly93d3cudGl0YW5pbHRkLmV1OjQ0Mw..&hl=en&v=Nh10qRQB5k2ucc5SCBLAQ4nA&size=normal&cb=qul7dxif6hrl" role="presentation" name="a-xlg3equ2w9wu"
+                    scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0">
+            </iframe>
+          </div>
+          <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">
+
+          </textarea>
+        </div>
+        <iframe style="display: none;"></iframe>
+      </div>
       <input class="text-light" type="submit" value="Изпращане">
     </form>
 

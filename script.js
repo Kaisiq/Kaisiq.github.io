@@ -19,3 +19,8 @@ function expandImage() {
         modal.style.display = "none";
     }
 }
+
+
+function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+}

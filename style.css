@@ -89,7 +89,7 @@ nav a {
     font-size: 18px;
     font-weight: bold;
     margin: 0 10px;
-    border-radius: 4px;
+    border-radius: 15px;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -167,10 +167,11 @@ nav a:hover {
 }
 
 .box {
-    max-width: 65%;
-    min-width: 65%;
+    max-width: 70%;
+    min-width: 70%;
+    height:300px;
     border-radius: 20px;
-    padding: 10%;
+    padding: 10% 5%;
     margin: auto;
     margin-bottom: 20px;
     text-align: center;
