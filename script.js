@@ -21,6 +21,16 @@ function expandImage() {
 }
 
 
-function onSubmit(token) {
-    document.getElementById("demo-form").submit();
-}
+const startAnimation = (entries, observer) => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("from-bottom-animation", entry.isIntersecting);
+    });
+};
+
+const observer = new IntersectionObserver(startAnimation);
+const options = { root: null, rootMargin: '0px', threshold: 1 };
+
+const elements = document.querySelectorAll('.box');
+elements.forEach(el => {
+    observer.observe(el, options);
+});
