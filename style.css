@@ -320,7 +320,7 @@ form label{
 
 /* Style the input fields */
 input[type="text"], input[type="email"], input[type="tel"] {
-    width: 80%;
+    width: 90%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -330,19 +330,27 @@ input[type="text"], input[type="email"], input[type="tel"] {
     font-size: 20px;
 }
 
-input::placeholder{
-    color: #ADADC9;
+.asterisk_required::after {
+    content:" *";
+    color: #e32;
+    position: absolute;
+    margin: 20px 0 0 -25px;
+    font-size: xx-large;
+    padding: 0 5px 0 0; }
+
+input::placeholder, textarea::placeholder{
+    color: #172D3B;
 }
 
 textarea {
-    width: 80%;
+    width: 90%;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 18px;
     resize: none;
-    background: #fffde7;
+    background: #f9fbe7;
     font-size: 20px;
 }
 
@@ -784,7 +792,8 @@ a{
     }
     .contactsContainer {
         margin: auto;
-        width:90%;
+        width:80%;
+        padding: 7.5%;
         font-size: 18px;
     }
     .contactInfo{
@@ -792,6 +801,10 @@ a{
     }
     .contactInfo p, footer p {
         font-size: 18px;
+    }
+    .contactForm{
+        width: 95%;
+        margin: auto;
     }
     .flex{
         display:block;
