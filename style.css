@@ -428,8 +428,15 @@ input[type="text"].captcha {
 
 
 .column {
+    display:flex;
     padding: 0;
     text-align: center;
+}
+
+.column p:first-child{
+    min-height: 120px;
+    display:flex;
+    align-items: center;
 }
 
 .column img{
@@ -715,6 +722,7 @@ a{
     }
 
     footer{
+        text-align: center;
         display:block;
         justify-content: space-between;
     }
@@ -773,10 +781,15 @@ a{
     }
     .swiper-slide img {
         justify-content: center;
+        margin: auto;
         display: block;
         width: 200px;
         height: 200px;
         object-fit: cover;
+    }
+
+    .swiper-slide p {
+        justify-content: center;
     }
 
 
