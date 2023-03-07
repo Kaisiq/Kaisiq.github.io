@@ -778,4 +778,32 @@ a{
         height: 200px;
         object-fit: cover;
     }
+
+
+
+    /*
+    Products Css
+     */
+    .products{
+        width: 90%;
+        justify-content: center;
+    }
+    .productsbtn{
+        display:block;
+        width:100%;
+    }
+    .product .info {
+        opacity: 1;
+    }
+    .product-grid-2 {
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        grid-gap: 20px;
+    }
+    .product-grid-3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+        grid-gap: 20px;
+    }
 }
