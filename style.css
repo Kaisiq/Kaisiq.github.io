@@ -105,30 +105,6 @@ nav a:hover {
     text-shadow: 0px 0px 10px rgba(0,0,0,.3);
 }
 
-.fade-in{
-    animation: fadeIn 0.2s;
-}
-@keyframes fadeIn {
-    0% {
-        transform: scale(0.5);
-        opacity: 0.1;
-    }
-    100% {opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.from-bottom-animation{
-    animation: from-bottom 0.3s;
-}
-@keyframes from-bottom {
-    0% {
-        transform: translateY(4em);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 
 
 #showcase p{
@@ -656,7 +632,64 @@ a{
 
 
 
+/*
+<======================= Animations =======================>
+ */
+.slide-in-from-right {
+    animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
+}
 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slide-in-from-left {
+    animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+.fade-in{
+    animation: fadeIn 0.2s;
+}
+@keyframes fadeIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.1;
+    }
+    100% {opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.from-bottom-animation{
+    animation: from-bottom 0.3s;
+}
+@keyframes from-bottom {
+    0% {
+        transform: translateY(4em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
 
 
