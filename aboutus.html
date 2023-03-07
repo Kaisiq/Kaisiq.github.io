@@ -135,7 +135,7 @@
 <script>
   var swiper = new Swiper('.swiper', {
     rewind: true,
-    slidesPerView: 3,
+    slidesPerView: getSlides(),
 
     autoplay: {
       delay: 2500,
@@ -155,9 +155,16 @@
 
   function getDirection() {
     var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+    var direction = window.innerWidth <= 768 ? 'horizontal' : 'horizontal';
 
     return direction;
   }
+
+  function getSlides() {
+    var windowWidth = window.innerWidth;
+    var slides = window.innerWidth <= 768 ? 1 : 3;
+    return slides;
+  }
+
 </script>
 </body>

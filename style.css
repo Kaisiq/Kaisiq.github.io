@@ -738,4 +738,44 @@ a{
         width: 100%;
         height: 300px;
     }
+
+
+    /*
+    About us css start
+     */
+    #aboutus{
+        width: 90%;
+    }
+    .text50pic{
+        display:block;
+    }
+    .text50pic img{
+        width: 100%;
+    }
+    .text50pictext{
+        width: 100%;
+    }
+    .reviewSection{
+        width: 90%;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .swiper-slide img {
+        justify-content: center;
+        display: block;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
 }
