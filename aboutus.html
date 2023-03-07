@@ -178,15 +178,12 @@
 
   function getDirection() {
     var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 768 ? 'horizontal' : 'horizontal';
-
-    return direction;
+    return window.innerWidth <= 768 ? 'horizontal' : 'horizontal';
   }
 
   function getSlides() {
     var windowWidth = window.innerWidth;
-    var slides = window.innerWidth <= 768 ? 1 : 3;
-    return slides;
+    return window.innerWidth <= 768 ? 1 : 3;
   }
 
 </script>
