@@ -720,7 +720,7 @@ a{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     nav {
         padding: 0;
     }
@@ -780,9 +780,10 @@ a{
         justify-content: space-between;
     }
     .contacts{
-        display:block;
+        display: block;
     }
     .contactsContainer {
+        margin: auto;
         width:90%;
         font-size: 18px;
     }
