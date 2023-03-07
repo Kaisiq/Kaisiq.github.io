@@ -629,6 +629,12 @@ a{
     color: white;
 }
 
+.g-recaptcha{
+    display:flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
 
 
 
@@ -636,7 +642,7 @@ a{
 <======================= Animations =======================>
  */
 .slide-in-from-right {
-    animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
+    animation: .3s ease-out 0s 1 slideInFromRight forwards;
 }
 
 @keyframes slideInFromRight {
@@ -649,10 +655,10 @@ a{
 }
 
 .slide-in-from-left {
-    animation: 1.5s ease-out 0s 1 slideInFromRight forwards;
+    animation: .3s ease-out 0s 1 slideInFromLeft forwards;
 }
 
-@keyframes slideInFromRight {
+@keyframes slideInFromLeft {
     0% {
         transform: translateX(-50%);
     }
@@ -684,7 +690,7 @@ a{
 }
 @keyframes from-bottom {
     0% {
-        transform: translateY(4em);
+        transform: translateY(2em);
     }
     100% {
         transform: translateY(0);
