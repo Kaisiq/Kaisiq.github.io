@@ -13,6 +13,9 @@ body {
 .text-dark{
     color: #001f3f;
 }
+.text-shadow{
+    text-shadow: 0 0 10px rgba(0,0,0,.3);
+}
 
 header {
     background-color: rgba(76,175,80,1);
