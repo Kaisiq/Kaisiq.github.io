@@ -181,7 +181,7 @@ nav a:hover {
     max-width: 35%;
     min-width: 35%;
     min-height:200px;
-    overflow: scroll;
+    overflow: auto;
     border-radius: 20px;
     padding: 7.5% 5%;
     margin: 5px;
