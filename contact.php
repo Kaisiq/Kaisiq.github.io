@@ -1,3 +1,22 @@
+<?php
+    $public_key = "";
+    $private_key = "";
+    $url = "";
+
+    echo "<pre>"; print_r($_POST); echo "</pre>";
+    if(array_key_exists('submit_form', $_POST)){
+        $response_key = $_POST['g-recaptcha-response'];
+        $response = "";
+        $response = json_decode($response);
+        if($response->success == 1){
+              //...
+        }
+        else{
+            echo "Please verify that you are not a robot.";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,7 +78,7 @@
     </div>
   </div>
   <div class="contactForm">
-    <form id="cform" action="/submit-form" method="post">
+    <form id="cform" action="" method="post">
       <h2 class="text-light">Формуляр за запитване</h2>
       <label for="first-name" class="text-light"></label>
       <input type="text" id="first-name" name="first-name" required placeholder="Име и Фамилия"><span class="asterisk_required"></span><br>
