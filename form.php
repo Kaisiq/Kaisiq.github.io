@@ -1,9 +1,8 @@
 <html>
 <body>
-<?php
-    if(array_key_exists('submit_form',$_POST)){
-        echo "gey"; print_r($_POST); echo "gey";
-    }
-?>
+
+Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
+
 </body>
-</html>
+</html> 
