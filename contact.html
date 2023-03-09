@@ -1,23 +1,6 @@
-<?php
-    $public_key = "";
-    $private_key = "";
-    $url = "";
 
-    echo "<pre>"; print_r($_POST); echo "</pre>";
-    if(array_key_exists('submit_form', $_POST)){
-        $response_key = $_POST['g-recaptcha-response'];
-        $response = "";
-        $response = json_decode($response);
-        if($response->success == 1){
-        }
-        else{
-            echo "Please verify that you are not a robot.";
-        }
-    }
-?>
 
 <!DOCTYPE html>
-<html>
 <head>
   <title>Титани ООД | Контакти</title>
   <meta charset="utf-8">
@@ -77,7 +60,7 @@
     </div>
   </div>
   <div class="contactForm">
-    <form id="cform" action="" method="post">
+    <form id="cform" action="./form.php" method="post">
       <h2 class="text-light">Формуляр за запитване</h2>
       <label for="first-name" class="text-light"></label>
       <input type="text" id="first-name" name="first-name" required placeholder="Име и Фамилия"><span class="asterisk_required"></span><br>
@@ -89,13 +72,13 @@
       <input type="tel" id="phone" name="phone" required placeholder="Телефон"><span class="asterisk_required"></span><br>
       <label class="text-light" for="message"></label>
       <textarea id="message" name="message" placeholder="Допълнителна информация към запитването"></textarea><br><br>
-      <div class="g-recaptcha" data-sitekey="6LfK3NAkAAAAAFeJPAS7svivxImLjedJPtu4TLE3" data-recaptcha-id="0">
+      <div class="g-recaptcha" data-sitekey="6LfK3NAkAAAAAFeJPAS7svivxImLjedJPtu4TLE3">
 <!--        <div style="width: 304px; height: 78px; border-radius: 10px">-->
 <!--          <div>-->
-            <iframe title="reCAPTCHA"
-                    src="https://www.google.com/recaptcha/api2/anchor?ar=2&k=6LfK3NAkAAAAAFeJPAS7svivxImLjedJPtu4TLE3&co=aHR0cHM6Ly93d3cudGl0YW5pbHRkLmV1OjQ0Mw..&hl=en&v=Nh10qRQB5k2ucc5SCBLAQ4nA&size=normal&cb=qul7dxif6hrl" role="presentation" name="a-xlg3equ2w9wu"
-                    scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0" style="border-radius: 20px;">
-            </iframe>
+<!--            <iframe title="reCAPTCHA"-->
+<!--                    src="https://www.google.com/recaptcha/api2/anchor?ar=2&k=6LfK3NAkAAAAAFeJPAS7svivxImLjedJPtu4TLE3&co=aHR0cHM6Ly93d3cudGl0YW5pbHRkLmV1OjQ0Mw..&hl=en&v=Nh10qRQB5k2ucc5SCBLAQ4nA&size=normal&cb=qul7dxif6hrl" role="presentation" name="a-xlg3equ2w9wu"-->
+<!--                    scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0" style="border-radius: 20px;">-->
+<!--            </iframe>-->
 <!--          </div>-->
 <!--          <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"-->
 <!--                    style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">-->
