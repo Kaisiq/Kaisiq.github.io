@@ -16,6 +16,9 @@ body {
 .text-shadow{
     text-shadow: 0 0 10px rgba(0,0,0,.3);
 }
+.bold-text-shadow{
+    text-shadow: 0 0 10px rgba(0,0,0,.48);
+}
 
 header {
     background-color: rgba(76,175,80,1);
@@ -35,7 +38,7 @@ header {
 .contacts{
     display: flex;
     justify-content: center;
-    background: #e8f5e9;
+    /*background: #e8f5e9;*/
     padding: 20px 0;
 }
 
@@ -73,7 +76,6 @@ nav {
 }
 
 #showcase {
-    /*background-color: #aed581;*/
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.7)), url(media/TitaniOOD_kran.jpg);
     background-repeat: no-repeat;
@@ -114,34 +116,6 @@ nav a:hover {
     font-size: 30px;
     letter-spacing: 6.6px;
     text-shadow: 0px 0px 10px rgba(0,0,0,.48);
-}
-
-#newsletter {
-    background-color: #aed581;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-#newsletter h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#newsletter form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-}
-
-#newsletter form input {
-    width: 70%;
-    padding: 12px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 4px;
 }
 
 #boxes {
@@ -309,7 +283,6 @@ form {
 }
 
 form h2{
-    text-shadow: 0 0 10px rgba(0,0,0,.48);
     font-weight: bold;
     font-size: 42px;
 }
@@ -406,7 +379,6 @@ input[type="text"].captcha {
 .contactInfo p span{
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 0 0 10px rgba(0,0,0,.48);
 }
 
 
@@ -427,6 +399,7 @@ input[type="text"].captcha {
     padding: 0;
     text-align: center;
 }
+
 
 .column p:first-child{
     min-height: 120px;
@@ -452,6 +425,7 @@ input[type="text"].captcha {
 .text50pic img{
     width: 45%;
     border-radius: 30px;
+    object-fit: cover;
 }
 
 .text50pic p{
@@ -463,7 +437,7 @@ input[type="text"].captcha {
 }
 
 .text50pictext span{
-    text-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    text-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 .text50pictext button{
