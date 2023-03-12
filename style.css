@@ -473,6 +473,63 @@ input[type="text"].captcha {
 /*End*/
 
 
+/* Image effect CSS start */
+.image-effect{
+    border-radius: 25px;
+    width: 45%;
+    background-color: #001f3f;
+}
+.image-effect > .image-effect-image{
+    border-radius: 25px;
+    background-image: url("media/TitaniOOD_kran.jpg");
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    /*background-size: 300%;*/
+    background-position: center;
+    filter: sepia(20%) hue-rotate(-15deg);
+    opacity: 0.8;
+    /*animation: pan-image 15s linear infinite;*/
+}
+
+/*@keyframes pan-image{*/
+/*    0%{*/
+/*        background-position: 36% 55%;*/
+/*        background-size: 200%;*/
+/*    }*/
+/*    20%{*/
+/*        background-position: 25% 35%;*/
+/*        background-size: 200%;*/
+/*    }*/
+
+/*    25% { !* -- View 2 -- *!*/
+/*        background-position: 0% 0%;*/
+/*        background-size: 150%;*/
+/*    }*/
+
+/*    40%{*/
+/*        background-position: 0% 0%;*/
+/*        background-size: 150%;*/
+/*    }*/
+
+/*    50%{*/
+/*        background-size: 225%;*/
+/*        background-position: 0% 0%;*/
+/*    }*/
+
+/*    60.0001% { !* -- View 4 -- *!*/
+/*        background-position: 10% 15%;*/
+/*        background-size: 300%;*/
+/*    }*/
+
+/*    100% {*/
+/*        background-position: 60% 30%;*/
+/*        background-size: 300%;*/
+/*    }*/
+/*}*/
+
+/* Image effect CSS end */
+
 
 
 /*start*/
