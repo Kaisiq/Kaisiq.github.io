@@ -58,7 +58,7 @@
     </div>
   </div>
   <div class="contactForm">
-    <form id="cform" action="form.html" method="get">
+    <form id="cform" onsubmit="sendEmail(); reset(); return false;" method="get">
       <h2 class="text-dark">Формуляр за запитване</h2>
       <label for="first-name" class="text-dark"></label>
       <input type="text" id="first-name" name="first-name" required placeholder="Име и Фамилия"><span class="asterisk_required"></span><br>
@@ -97,5 +97,24 @@
     <p class="text-light">Email: daniel_titani@abv.bg</p>
   </div>
 </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+      SecureToken: "7305a37-25d7-444e-8ad1-db22e50b51f5",
+      // SecureToken: "dc844fa1-a9d1-4b39-b7c8-aed18fc59255",
+      To: "dahudohu@gmail.com",
+      From: document.getElementById("email").value,
+      Subject: "Запитване чрез сайта на Титани",
+      Body: "Име: " + document.getElementById("first-name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Телефон: " + document.getElementById("phone").value
+            + "<br> Компания (може и да няма): " + document.getElementById("company").value
+            + "<br> Запитване: " + document.getElementById("message").value
+    }).then(
+            message => alert("Message sent")
+    );
+  }
+</script>
 </body>
 </html>
