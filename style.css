@@ -886,10 +886,11 @@ a{
     About us css start
      */
     #aboutus{
-        width: 90%;
+        width: 95%;
     }
     .text50pic{
         display:block;
+        margin: 0;
     }
     .text50pic img{
         width: 100%;
