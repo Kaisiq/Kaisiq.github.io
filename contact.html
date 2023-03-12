@@ -101,16 +101,20 @@
 <script>
   function sendEmail(){
     Email.send({
-      SecureToken: "7305a37-25d7-444e-8ad1-db22e50b51f5",
-      // SecureToken: "dc844fa1-a9d1-4b39-b7c8-aed18fc59255",
+      // SecureToken: "7305a37-25d7-444e-8ad1-db22e50b51f5",
+      SecureToken: "dc844fa1-a9d1-4b39-b7c8-aed18fc59255",
+      Host:"smtp.elasticemail.com",
+      Username:"dahudohuto@abv.bg",
       To: "dahudohu@gmail.com",
-      From: document.getElementById("email").value,
-      Subject: "Запитване чрез сайта на Титани",
-      Body: "Име: " + document.getElementById("first-name").value
-            + "<br> Email: " + document.getElementById("email").value
-            + "<br> Телефон: " + document.getElementById("phone").value
-            + "<br> Компания (може и да няма): " + document.getElementById("company").value
-            + "<br> Запитване: " + document.getElementById("message").value
+      // From: document.getElementById("email").value,
+      From: "test@test.test",
+      Subject: "Test query",
+      // Body: "Име: " + document.getElementById("first-name").value
+      //       + "<br> Email: " + document.getElementById("email").value
+      //       + "<br> Телефон: " + document.getElementById("phone").value
+      //       + "<br> Компания (може и да няма): " + document.getElementById("company").value
+      //       + "<br> Запитване: " + document.getElementById("message").value
+      Body: "test"
     }).then(
             message => alert(message)
     );
