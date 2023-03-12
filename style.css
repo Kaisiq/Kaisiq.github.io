@@ -20,6 +20,10 @@ body {
 .bold-text-shadow{
     text-shadow: 0 0 10px rgba(0,0,0,.48);
 }
+img{
+    -webkit-user-drag: none;
+    user-select: none;
+}
 
 header {
     /*background-color: rgba(76,175,80,1);*/
